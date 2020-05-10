@@ -7,8 +7,8 @@
 
 setup:
 	# Create python virtualenv & source it
-	pip3 install virtualenv
-	python3 -m venv ~/.project-ml-microservice-kubernetes
+	pip3 install virtualenv &&\
+	python3 -m venv ~/.project-ml-microservice-kubernetes &&\
 	source ~/.project-ml-microservice-kubernetes/bin/activate
 
 install:
@@ -20,6 +20,12 @@ test:
 	# Additional, optional, tests could go here
 	#python -m pytest -vv --cov=myrepolib tests/*.py
 	#python -m pytest --nbval notebook.ipynb
+
+validate-circleci:
+	circleci config process .circleci/config.yml
+
+run-circleci-local:
+	circleci local execute
 
 lint:
 	# See local hadolint install instructions:   https://github.com/hadolint/hadolint
