@@ -8,8 +8,8 @@
 setup:
 	# Create python virtualenv & source it
 	pip3 install virtualenv
-	python3 -m venv ~/.devops
-	source ~/.devops/bin/activate
+	python3 -m venv ~/.project-ml-microservice-kubernetes
+	source ~/.project-ml-microservice-kubernetes/bin/activate
 
 install:
 	# This should be run from inside a virtualenv
