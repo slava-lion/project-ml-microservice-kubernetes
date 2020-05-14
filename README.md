@@ -24,6 +24,10 @@ Your project goal is to operationalize this working, machine learning microservi
 
 ## Setup the Environment
 
+* install python https://www.python.org/downloads/windows/ since python 3.4 pip will be installed from binary 
+* install virtualenv `pip install virtualenv`
+* install choco https://chocolatey.org/install
+* install make `choco install make`
 * Create a virtualenv and activate it
 * Run `make install` to install the necessary dependencies
 
@@ -35,7 +39,7 @@ Your project goal is to operationalize this working, machine learning microservi
 
 ### Kubernetes Steps
 
-* Setup and Configure Docker locally
-* Setup and Configure Kubernetes locally
+* Setup and Configure Docker locally https://docs.docker.com/docker-for-windows/install/ 
+* Setup and Configure Kubernetes locally https://kubernetes.io/ru/docs/tasks/tools/install-minikube/ 
 * Create Flask app in Container
 * Run via kubectl
