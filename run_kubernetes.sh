@@ -23,3 +23,4 @@ kubectl get pods
 # Step 4:
 # Forward the container port to a host
 kubectl port-forward $imagename 8000:80
+kubectl logs $imagename
